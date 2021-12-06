@@ -56,5 +56,5 @@ async function remove(shipperId) {
   await db('shippers')
   .delete()
   .where('shipperid', shipperId)
-  return ``
+  return `the shipper with id ${shipperId} got axed!`
 }
