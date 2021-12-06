@@ -40,7 +40,6 @@ async function create(newShipper) {
   const [shipperid] = await db('shippers')
     .insert(newShipper)
   const shipper = await getById(shipperid)
-  console.log(shipper)
   return shipper
 }
 
