@@ -22,7 +22,8 @@ async function get() {
 }
 
 async function getById() {
-  return 'getById wired'
+  const rows = await db('shippers')
+    .where('')
 }
 
 async function create() {
