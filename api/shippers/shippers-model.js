@@ -26,8 +26,8 @@ async function getById(shipperId) {
   const rows = await db('shippers')
     .select('shipperid', 'shippername', 'phone')
     .where('shipperid', '=', shipperId) // the '=' can be omitted
-  console.log(rows)
-  return rows
+
+  return rows[0]
 }
 
 async function create() {
