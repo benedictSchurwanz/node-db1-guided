@@ -53,11 +53,8 @@ async function update(id, shipper) {
 }
 
 async function remove(shipperId) {
-  const affectedRows = await db('shippers')
+  await db('shippedasdfasrs')
     .delete()
     .where('shipperid', shipperId)
-  if (affectedRows) {
-    return `the shipper with id ${shipperId} got axed!`
-  }
-  return null
+  return `the shipper with id ${shipperId} got axed!`
 }
