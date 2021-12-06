@@ -34,7 +34,8 @@ async function getById(shipperId) {
   return record
 }
 
-async function create() {
+async function create(newShipper) {
+  console.log(newShipper)
   return 'create wired'
 }
 
