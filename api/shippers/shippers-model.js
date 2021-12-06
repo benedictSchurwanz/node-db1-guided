@@ -1,4 +1,4 @@
-// connection knex(config)
+// db is connection knex(config)
 const db = require('../../data/db-config')
 
 module.exports = {
