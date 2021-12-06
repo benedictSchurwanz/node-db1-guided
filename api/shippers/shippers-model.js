@@ -56,4 +56,5 @@ async function remove(shipperId) {
   await db('shippers')
   .delete()
   .where('shipperid', shipperId)
+  return ``
 }
