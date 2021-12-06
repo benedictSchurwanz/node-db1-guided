@@ -39,8 +39,7 @@ async function create(newShipper) {
   // you have determined that the stuff is an array
   const [shipperid] = await db('shippers')
     .insert(newShipper)
-  console.log(shipperid)
-  return shipperid
+  
 }
 
 async function update() {
