@@ -23,11 +23,11 @@ async function get() {
 
 async function getById(shipperId) {
   // raw sql first!!!!!
-  const rows = await db('shippers')
+  const record = await db('shippers')
     .select('shipperid', 'shippername', 'phone')
     .where('shipperid', '=', shipperId) // the '=' can be omitted
-
-  return rows[0]
+    .first()
+  return record
 }
 
 async function create() {
