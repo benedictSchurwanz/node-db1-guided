@@ -13,7 +13,7 @@ async function get() {
   // select * from shippers;
   // Maintanable:
   const rows = await db('shippers')
-    .select('shipperid', 'phone')
+    .select('shipperid', 'shippername', 'phone')
 
   // escape hatch, don't do it, please! NIGHTMARE!!!!!
   // const rows = await db.raw('select * from shippers;')
