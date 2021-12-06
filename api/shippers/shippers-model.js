@@ -7,6 +7,7 @@ module.exports = {
 }
 
 async function get() {
+  // ? what sql we need ?
   return 'get wired'
 }
 
