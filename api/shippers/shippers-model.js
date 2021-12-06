@@ -14,6 +14,7 @@ async function get() {
   // Maintanable:
   const rows = await db('shippers')
     .select('shipperid', 'shippername', 'phone')
+    // ?
 
   // escape hatch, don't do it, please! NIGHTMARE!!!!!
   // const rows = await db.raw('select * from shippers;')
