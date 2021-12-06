@@ -53,7 +53,7 @@ async function update(id, shipper) {
 }
 
 async function remove(shipperId) {
-  await db('shippedasdfasrs')
+  await db('shippers')
     .delete()
     .where('shipperid', shipperId)
   return `the shipper with id ${shipperId} got axed!`
