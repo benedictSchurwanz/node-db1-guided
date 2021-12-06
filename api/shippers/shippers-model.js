@@ -43,8 +43,9 @@ async function create(newShipper) {
 }
 
 async function update(id, shipper) {
-  await db('shippers')
+  const what = await db('shippers')
     .update(shipper)
+    .where('shipperid', id)
 }
 
 async function remove() {
