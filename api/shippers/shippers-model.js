@@ -37,6 +37,8 @@ async function getById(shipperId) {
 async function create(newShipper) {
   const stuff = await db('shippers')
     .insert(newShipper)
+  console.log(stuff)
+  return stuff
 }
 
 async function update() {
