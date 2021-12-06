@@ -37,6 +37,7 @@ async function getById(shipperId) {
 async function create(newShipper) {
   // do not use destructuring unless
   // you have determined that the stuff is an array
+  // the insert returns an array of ids
   const [shipperid] = await db('shippers').insert(newShipper)
   const shipper = await getById(shipperid)
   return shipper
