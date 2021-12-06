@@ -25,7 +25,7 @@ async function getById(shipperId) {
   // raw sql first!!!!!
   const rows = await db('shippers')
     .select('shipperid', 'shippername', 'phone')
-    .where('shipperid', '=', shipperId)
+    .where('shipperid', '=', shipperId) // the '=' can be omitted
   console.log(rows)
   return rows
 }
