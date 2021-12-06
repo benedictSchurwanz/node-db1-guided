@@ -52,6 +52,8 @@ async function update(id, shipper) {
   return updated
 }
 
-async function remove() {
-  return 'delete wired'
+async function remove(shipperId) {
+  await db('shippers')
+  .delete()
+  .where('shipperid', shipperId)
 }
