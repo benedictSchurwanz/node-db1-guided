@@ -1,3 +1,5 @@
+
+
 module.exports = {
   get,
   getById,
@@ -7,7 +9,7 @@ module.exports = {
 }
 
 async function get() {
-  // ? what sql we need ?
+  // select * from shippers;
   return 'get wired'
 }
 
