@@ -27,9 +27,10 @@ async function getById(shipperId) {
     .select('shipperid', 'shippername', 'phone')
     .where('shipperid', '=', shipperId) // the '=' can be omitted
 
-    const record] = await db('shippers')
-    .select('shipperid', 'shippername', 'phone')
-    .where('shipperid', '=', shipperId) // the '=' can be omitted
+  // const record = await db('shippers')
+  // .select('shipperid', 'shippername', 'phone')
+  // .where('shipperid', '=', shipperId)
+  // .first()
   return record
 }
 
