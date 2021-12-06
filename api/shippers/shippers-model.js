@@ -11,7 +11,8 @@ module.exports = {
 async function get() {
   // select * from shippers;
   const rows = await db('shippers')
-  
+  console.log(rows)
+  return rows
 }
 
 async function getById() {
