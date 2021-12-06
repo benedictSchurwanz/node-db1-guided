@@ -23,10 +23,9 @@ async function get() {
 
 async function getById(shipperId) {
   // raw sql first!!!!!
-  const record = await db('shippers')
+  const [record] = await db('shippers')
     .select('shipperid', 'shippername', 'phone')
     .where('shipperid', '=', shipperId) // the '=' can be omitted
-    .first()
   return record
 }
 
