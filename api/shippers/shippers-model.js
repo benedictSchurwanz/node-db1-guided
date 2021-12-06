@@ -21,10 +21,10 @@ async function get() {
   return rows
 }
 
-async function getById() {
+async function getById(shipperId) {
   // raw sql first!!!!!
   const rows = await db('shippers')
-    .where('shipperid')
+    .where('shipperid', '=', shipperId)
 }
 
 async function create() {
