@@ -16,6 +16,7 @@ async function get() {
     .select('shipperid', 'shippername', 'phone')
     .orderBy('shippername', 'desc')
 
+    console.log(rows)
   // escape hatch, don't do it, please! NIGHTMARE!!!!!
   // const rows = await db.raw('select * from shippers;')
   return rows
