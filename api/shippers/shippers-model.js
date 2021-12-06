@@ -10,7 +10,8 @@ module.exports = {
 
 async function get() {
   // select * from shippers;
-  return 'get wired'
+  const rows = await db('shippers')
+  
 }
 
 async function getById() {
