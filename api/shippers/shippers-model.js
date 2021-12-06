@@ -42,7 +42,8 @@ async function create(newShipper) {
   return shipper
 }
 
-async function update() {
+async function update(id, shipper) {
+  console.log(id, shipper)
   return 'update wired'
 }
 
