@@ -46,6 +46,8 @@ async function update(id, shipper) {
   const what = await db('shippers')
     .update(shipper)
     .where('shipperid', id)
+  console.log(what)
+  return what
 }
 
 async function remove() {
