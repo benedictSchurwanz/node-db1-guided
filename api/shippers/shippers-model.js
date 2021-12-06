@@ -24,7 +24,10 @@ async function get() {
 async function getById(shipperId) {
   // raw sql first!!!!!
   const rows = await db('shippers')
+    .select('shipperid', 'shippername', 'phone')
     .where('shipperid', '=', shipperId)
+  console.log(rows)
+  return rows
 }
 
 async function create() {
