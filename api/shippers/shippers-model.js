@@ -43,11 +43,11 @@ async function create(newShipper) {
 }
 
 async function update(id, shipper) {
-  const what = await db('shippers')
+  await db('shippers')
     .update(shipper)
     .where('shipperid', id)
-  console.log(what)
-  return what
+  const updated = await getById(id)
+  console.log()
 }
 
 async function remove() {
