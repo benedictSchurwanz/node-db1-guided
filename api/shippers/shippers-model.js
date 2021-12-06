@@ -9,12 +9,12 @@ module.exports = {
 }
 
 async function get() {
-  // select * from shippers;
-  // const rows = await db('shippers')
-  //   .select('shipperid', 'phone')
+  select * from shippers;
+  const rows = await db('shippers')
+    .select('shipperid', 'phone')
 
-  const rows = await db.raw('select * from shippers;')
-
+  // escape hatch, don't do it, please!
+  // const rows = await db.raw('select * from shippers;')
   return rows
 }
 
