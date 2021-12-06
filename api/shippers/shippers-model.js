@@ -43,7 +43,7 @@ async function create(newShipper) {
 }
 
 async function update(id, shipper) {
-  // the update returns 
+  // the update returns num of records affected
   await db('shippers')
     .update(shipper)
     .where('shipperid', id)
