@@ -43,8 +43,8 @@ async function create(newShipper) {
 }
 
 async function update(id, shipper) {
-  console.log(id, shipper)
-  return 'update wired'
+  await db('shippers')
+    .update(shipper)
 }
 
 async function remove() {
