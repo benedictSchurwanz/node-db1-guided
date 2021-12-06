@@ -1,3 +1,4 @@
+// 
 const db = require('../../data/db-config')
 
 module.exports = {
@@ -10,10 +11,11 @@ module.exports = {
 
 async function get() {
   // select * from shippers;
+  // Maintanable:
   const rows = await db('shippers')
     .select('shipperid', 'phone')
 
-  // escape hatch, don't do it, please!
+  // escape hatch, don't do it, please! NIGHTMARE!!!!!
   // const rows = await db.raw('select * from shippers;')
   return rows
 }
