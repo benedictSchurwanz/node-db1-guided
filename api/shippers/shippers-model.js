@@ -1,4 +1,4 @@
-// const db etc etc
+const db = require('../../data/db-config')
 
 module.exports = {
   get,
