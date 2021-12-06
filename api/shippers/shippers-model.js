@@ -10,7 +10,7 @@ module.exports = {
 
 async function get() {
   // select * from shippers;
-  const rows = await db('customers')
+  const rows = await db('shippers')
   return rows
 }
 
